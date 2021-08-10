@@ -1,9 +1,9 @@
-team = ["Ollie", "Bob", "Steve", "Dave", "Chris"]
 
-team.append("Harry")
+def cohort_list(trainer="Harry", index=4, name="Chris"):
+    team = ["Ollie", "Bob", "Steve", "Dave", "Chris"]
 
-print(team)
+    team.append(trainer)
 
-print(team[4])
+    return f"{team}\n{team[index]}\n{team.count(name)}"
 
-print(team.count("Chris"))
+print(cohort_list(name="Jeff"))
